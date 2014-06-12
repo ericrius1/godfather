@@ -43,10 +43,6 @@ function init() {
   renderer.setSize(w, h);
   document.body.appendChild(renderer.domElement);
 
-
-
-
-
 }
 
 function start() {
@@ -55,7 +51,6 @@ function start() {
   animate();
 
 }
-
 
 
 function animate() {
