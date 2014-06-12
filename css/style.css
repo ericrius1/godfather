@@ -1,0 +1,11 @@
+.note-container{
+	position: absolute;
+	color: white;
+	top: 200px;
+	font-size: 30px;
+	left: 200px;
+}
+
+.note{
+  display: none;
+}

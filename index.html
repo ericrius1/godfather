@@ -1,0 +1,62 @@
+<html>
+
+  <head>
+    <link rel="stylesheet" href="css/style.css">
+  </head>
+
+  <body>
+    <div class ='note-container'>
+      <div class = 'note' id = "line1">Father,</div>
+      <div class = 'note' id = "line2">On this special day,</div>
+      <div class = 'note' id = "line3">I raise a glass to your health and happiness.</div>
+      <div class = "note" id = 'line4'>And honor the great work and love you have given the Family.</div>
+      <div class = "note" id = 'line5'>May your cup be ever overflowing with the sweet fruit of your harvest. </div>
+    </div>
+
+    <!-- <div id = "toast">Good father, let us raise a glass (or two) to you on this merry day!!</div> -->
+
+    <script src="lib/underscore.js"></script>
+    <script src="lib/three.min.js"></script>
+    
+    <script src="lib/tween.js"></script>
+    <script src ="lib/jquery.js"></script>
+    <script src ="lib/ShaderParticles.js"></script>
+
+    <script src="js/landscape.js"></script>
+    <script src="js/brushfactory.js"></script>
+    <script src="js/field.js"></script>
+    <script src="js/village.js"></script>
+    <script src="js/sky.js"></script>
+    <script src="js/grapes.js"></script>
+    <script src="js/main.js"></script>
+
+    <script>
+      var lineFadeTime = 1500;
+      $(document).ready(function(){
+        init();
+        $('#line1').fadeTo(lineFadeTime, 1);
+        setTimeout(function(){
+          $('#line2').fadeTo(lineFadeTime, 1);
+        }, 3000)
+         setTimeout(function(){
+          $('#line3').fadeTo(lineFadeTime, 1);
+        }, 6000)
+          setTimeout(function(){
+          $('#line4').fadeTo(lineFadeTime, 1);
+        }, 11000)
+           setTimeout(function(){
+          $('#line5').fadeTo(lineFadeTime, 1);
+        }, 14000)
+
+        setTimeout(function(){
+          $('.note-container').fadeTo(2000, 0)
+          start();
+        }, 0000)
+      })
+        
+
+    </script>
+
+
+  </body>
+</html>
