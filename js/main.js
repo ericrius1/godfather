@@ -30,7 +30,6 @@ audio.play();
 function init() {
   clock = new THREE.Clock();
 
-  perlin = new ImprovedNoise();
 
   camera = new THREE.PerspectiveCamera(45, w / h, 0.1, 2000);
   camera.position.z = 120;
